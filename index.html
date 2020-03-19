@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-3">
+        <h2>Rock, Paper and Scissors</h2>
+        <h5>Computer is Red and You are blue....</h5>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="rock-576682_1280.png" height=150 width=150 onclick="rpsGame(this)">
+            <img id="paper" src="stationery-155143_1280.png" height=150 width=150 onclick="rpsGame(this)">
+            <img id="scissors" src="scissors-1297454_1280.png" height=150 width=150 onclick="rpsGame(this)">
+        </div>
+    </div>
+
+    <div class="container-4">
+        <h2 id="change-my-color">Change Color of all buttons</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+
+            <button class="btn btn-primary">Facebook</button>
+            <button class="btn btn-danger">Danger</button>
+            <button class="btn btn-warning">Google</button>
+            <button class="btn btn-success">Facebook</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
